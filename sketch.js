@@ -17,9 +17,9 @@ function preload(){
  // man_image = loadAnimation("walking_1.png","walking_2.png","walking_3.png","walking_4.png"
 //  ,"walking_5.png","walking_6.png","walking_7.png","walking_8.png");
    man_image = loadImage("walking_1.png");
-  thunder1 = loadImage("thunder1.png");
-  thunder2 = loadImage("thunder2.png");
-  thunder3 = loadImage("thunder3.png");
+  thunder1 = loadImage("1.png");
+  thunder2 = loadImage("2.png");
+  thunder3 = loadImage("3.png");
 }
 
 function setup(){
@@ -31,11 +31,11 @@ function setup(){
   
   umbrella = new Umbrella();
 
-  if(frameCount%100===0){
+ 
     for(var i=0; i<maxDrops;i++){
-      drops.push(new Drop(random(0,400),random(0,400),3,10));
+      drops.push(new Drops(random(0,400),random(0,400),3,10));
      }
-    }
+    
 
 }
 
@@ -69,7 +69,7 @@ function draw(){
     drops[i].display();
     drops[i].update();
   }
-  camera.position.x = mouseX;
+  //camera.position.x = mouseX;
   
   drawSprites();
 }
