@@ -12,7 +12,7 @@ class Umbrella {
     }
     display(){
          var pos = this.body.position;
-         image(man_image, pos.x-90, pos.y-20,175,175);
+         image(man_image, pos.x-90, pos.y-40,175,175);
 
     }
 }
