@@ -1,4 +1,4 @@
-class Drop {
+class Drops {
     constructor(x, y, width, height) {
         var options={
          restitution: 0.1,
